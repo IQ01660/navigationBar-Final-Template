@@ -1,0 +1,193 @@
+body {
+  margin: 0;
+}
+
+@media only screen and (max-width: 900px) {
+  .topSearch {
+    display: none !important;
+  }
+}
+.topInfo {
+  width: 100%;
+  background-color: #f5f6f7;
+  display: block;
+  height: 48px;
+}
+.topInfo .wrapInfo {
+  width: 76.2%;
+  margin: 0 auto;
+}
+.topInfo .wrapInfo .topSearch {
+  width: 35%;
+  display: inline-block;
+  padding: 10px 0px;
+}
+.topInfo .wrapInfo .topSearch label {
+  color: #8D8D8E;
+}
+.topInfo .wrapInfo .topSearch label i {
+  font-size: 17px;
+}
+.topInfo .wrapInfo .topSearch #topSearch {
+  border: none;
+  background-color: #f5f6f7;
+  width: 90%;
+  color: #8D8D8E;
+  font-size: 17px;
+}
+.topInfo .wrapInfo .topSearch #topSearch:focus {
+  outline: none;
+}
+.topInfo .wrapInfo .topContacts {
+  display: inline-block;
+}
+.topInfo .wrapInfo .topContacts .topContactsItem {
+  display: inline-block;
+  padding: 10px 30px;
+  margin-right: -5px;
+  color: #8D8D8E;
+  cursor: pointer;
+}
+.topInfo .wrapInfo .topContacts .topContactsItem span {
+  font-size: 17px;
+}
+.topInfo .wrapInfo .topContacts .topContactsItem:hover {
+  color: #53B778;
+}
+.topInfo .wrapInfo .topContacts .topContactsItem:first-child {
+  border-right: 1px solid #8D8D8E;
+}
+.topInfo .wrapInfo .topContacts .topContactsItem:nth-child(2) {
+  padding-right: 5px;
+}
+
+@media only screen and (max-width: 1295px) {
+  .nav .navBar {
+    display: none !important;
+  }
+
+  .fa-bars {
+    display: inline-block !important;
+  }
+}
+@media only screen and (min-width: 1296px) {
+  .mainDrop {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .topInfo {
+    display: none;
+  }
+}
+.nav {
+  display: block;
+  background: white;
+  width: 76.2%;
+  margin: 0 auto;
+}
+.nav .logo {
+  display: inline-block;
+  padding-top: 20px;
+  cursor: pointer;
+}
+.nav .navBar {
+  padding-top: 25px;
+  display: inline-block;
+}
+.nav .navBar .navBarChoices {
+  display: inline-block;
+}
+.nav .navBar .navBarChoices ul {
+  list-style-type: none;
+  padding: 0;
+}
+.nav .navBar .navBarChoices ul li {
+  display: inline-block;
+}
+.nav .navBar .navBarChoices ul li a {
+  text-decoration: none;
+  font-size: 17px;
+  color: #8D8D8E;
+  padding: 5px 20px;
+  cursor: pointer;
+  transition: 0.4s all ease;
+}
+.nav .navBar .navBarChoices ul li a:hover {
+  border-bottom: 2px solid #53B778;
+}
+.nav .navBar .navBtn {
+  display: inline-block;
+  width: 160px;
+  height: 44px;
+  border-radius: 0;
+  background: #53B778;
+  border: 2px solid #53B778;
+  transition: 0.2s all ease;
+}
+.nav .navBar .navBtn:focus {
+  outline: none;
+}
+.nav .navBar .navBtn:hover {
+  color: #53B778;
+  background: white;
+}
+.nav .fa-bars {
+  display: none;
+  color: black;
+  font-size: 30px;
+  padding-top: 20px;
+  cursor: pointer;
+}
+
+.mainDrop {
+  width: 100%;
+  text-align: left;
+  display: none;
+}
+.mainDrop ul {
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+}
+.mainDrop ul li {
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid #53B778;
+  padding: 10px 20px;
+}
+.mainDrop ul li:hover {
+  background: #53B778;
+}
+.mainDrop ul li:hover a {
+  color: white;
+}
+.mainDrop ul li a {
+  text-decoration: none;
+  font-size: 17px;
+  color: #8D8D8E;
+  cursor: pointer;
+}
+.mainDrop button {
+  margin-top: 15px;
+  width: 100%;
+  height: 44px;
+  border-radius: 0;
+  background: #53B778;
+  border: 2px solid #53B778;
+  transition: 0.2s all ease;
+}
+.mainDrop button:focus {
+  outline: none;
+}
+.mainDrop button:hover {
+  color: #53B778;
+  background: white;
+}
+
+.activateLink {
+  color: #53B778 !important;
+  border-bottom: 2px solid #53B778 !important;
+}
+
+/*# sourceMappingURL=digital.css.map */

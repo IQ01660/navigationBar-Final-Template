@@ -1,0 +1,124 @@
+@media only screen and (max-width:1295px) {
+    .nav .navBar{
+        display:none !important;
+    }
+    .fa-bars {
+        display:inline-block !important;
+    }
+}
+@media only screen and (min-width:1296px) {
+    .mainDrop {
+        display:none !important;
+    }
+}
+@media only screen and (max-width:460px) {
+    .topInfo {
+        display:none;
+    }
+}
+.nav {
+    display:block;
+    // height:68px;
+    background: white;
+    width:76.2%;
+    margin:0 auto;
+    .logo {
+        display:inline-block;
+        padding-top:20px;
+        cursor:pointer;
+    }
+    .navBar {
+        padding-top:25px;
+        display:inline-block;
+        .navBarChoices {
+            display:inline-block;
+            ul {
+                list-style-type: none;
+                padding:0;
+                li {
+                    display: inline-block;
+                    a{
+                       text-decoration: none;
+                       font-size:17px;
+                       color:$topIcon;
+                       padding:5px 20px;
+                       cursor:pointer;
+                       transition:0.4s all ease;
+                       &:hover{
+                           border-bottom:2px solid $highlightGreen;
+                       }
+                    }
+                }
+            }
+        }
+        .navBtn {
+            display: inline-block;
+            width:160px;
+            height:44px;
+            border-radius:0;
+            &:focus{outline:none};
+            background: $highlightGreen;
+            border:2px solid $highlightGreen;
+            transition:0.2s all ease;
+            &:hover{
+                color:$highlightGreen;
+                background: white;
+            }
+
+         }
+         
+    }
+    .fa-bars{
+             display:none;
+             color:black;
+             font-size:30px;
+             padding-top:20px;
+             cursor:pointer;
+     }
+}
+.mainDrop {
+    width:100%;
+    text-align:left;
+    display:none;
+    ul {
+        width:100%;
+        list-style-type: none;
+        padding:0;
+        li {
+            width:100%;
+            display: block;
+            border-bottom:1px solid $highlightGreen;
+            padding:10px 20px;
+            &:hover {
+                background:$highlightGreen;
+            }
+            &:hover a {
+                color:white;
+            }
+            a {
+                text-decoration: none;
+                font-size:17px;
+                color:$topIcon;
+                cursor:pointer;
+            }
+        }
+    }
+    button {
+        margin-top:15px;
+        width:100%;
+        height:44px;
+        border-radius:0;
+        background: $highlightGreen;
+        border:2px solid $highlightGreen;
+        transition:0.2s all ease;
+        &:focus{outline:none};
+        &:hover{
+            color:$highlightGreen;
+            background: white;
+        }
+    }
+}
+.activateLink {
+    color:$highlightGreen !important;
+    border-bottom:2px solid $highlightGreen !important;
+}
