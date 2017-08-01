@@ -11,7 +11,7 @@
         display:none !important;
     }
 }
-@media only screen and (max-width:460px) {
+@media only screen and (max-width:500px) {
     .topInfo {
         display:none;
     }
@@ -32,11 +32,39 @@
         display:inline-block;
         .navBarChoices {
             display:inline-block;
-            ul {
+            >ul {
                 list-style-type: none;
                 padding:0;
-                li {
+                >li {
                     display: inline-block;
+                    vertical-align: top;
+                    &:nth-child(1) {
+                       ul {
+                           display:none;
+                           list-style-type: none;
+                           padding:0;
+                           background:white;
+                           position:absolute;
+                           margin-top:10px;
+                           li {
+                               padding:5px 20px;
+                               a {
+                                   word-spacing: 5px;
+                                   transition: 0s all ease;
+                                    &:hover{
+                                        border-bottom:none !important;
+                                        cursor: pointer;
+                                        color:$highlightGreen;
+                                    }
+                                    span {
+                                   float:left;
+                                   margin-right:10px;
+                                    }
+                               }
+                               
+                           }
+                       } 
+                    }
                     a{
                        text-decoration: none;
                        font-size:17px;
@@ -80,11 +108,11 @@
     width:100%;
     text-align:left;
     display:none;
-    ul {
+    >ul {
         width:100%;
         list-style-type: none;
         padding:0;
-        li {
+        >li {
             width:100%;
             display: block;
             border-bottom:1px solid $highlightGreen;
@@ -94,6 +122,27 @@
             }
             &:hover a {
                 color:white;
+            }
+            &:nth-child(1) {
+                >ul {
+                    background: white;
+                    list-style-type: none;
+                    display:none;
+                    li {
+                        width:100%;
+                        a {
+                            color:grey;
+                            span {
+                                float:left;
+                                margin-right:10px;
+                            }
+                           &:hover{
+                            border-bottom:none !important;
+                            color:$highlightGreen;
+                           }
+                        }
+                    }
+                }
             }
             a {
                 text-decoration: none;

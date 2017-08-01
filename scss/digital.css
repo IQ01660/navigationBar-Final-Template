@@ -75,7 +75,7 @@ body {
     display: none !important;
   }
 }
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 500px) {
   .topInfo {
     display: none;
   }
@@ -98,14 +98,39 @@ body {
 .nav .navBar .navBarChoices {
   display: inline-block;
 }
-.nav .navBar .navBarChoices ul {
+.nav .navBar .navBarChoices > ul {
   list-style-type: none;
   padding: 0;
 }
-.nav .navBar .navBarChoices ul li {
+.nav .navBar .navBarChoices > ul > li {
   display: inline-block;
+  vertical-align: top;
 }
-.nav .navBar .navBarChoices ul li a {
+.nav .navBar .navBarChoices > ul > li:nth-child(1) ul {
+  display: none;
+  list-style-type: none;
+  padding: 0;
+  background: white;
+  position: absolute;
+  margin-top: 10px;
+}
+.nav .navBar .navBarChoices > ul > li:nth-child(1) ul li {
+  padding: 5px 20px;
+}
+.nav .navBar .navBarChoices > ul > li:nth-child(1) ul li a {
+  word-spacing: 5px;
+  transition: 0s all ease;
+}
+.nav .navBar .navBarChoices > ul > li:nth-child(1) ul li a:hover {
+  border-bottom: none !important;
+  cursor: pointer;
+  color: #53B778;
+}
+.nav .navBar .navBarChoices > ul > li:nth-child(1) ul li a span {
+  float: left;
+  margin-right: 10px;
+}
+.nav .navBar .navBarChoices > ul > li a {
   text-decoration: none;
   font-size: 17px;
   color: #8D8D8E;
@@ -113,7 +138,7 @@ body {
   cursor: pointer;
   transition: 0.4s all ease;
 }
-.nav .navBar .navBarChoices ul li a:hover {
+.nav .navBar .navBarChoices > ul > li a:hover {
   border-bottom: 2px solid #53B778;
 }
 .nav .navBar .navBtn {
@@ -145,24 +170,43 @@ body {
   text-align: left;
   display: none;
 }
-.mainDrop ul {
+.mainDrop > ul {
   width: 100%;
   list-style-type: none;
   padding: 0;
 }
-.mainDrop ul li {
+.mainDrop > ul > li {
   width: 100%;
   display: block;
   border-bottom: 1px solid #53B778;
   padding: 10px 20px;
 }
-.mainDrop ul li:hover {
+.mainDrop > ul > li:hover {
   background: #53B778;
 }
-.mainDrop ul li:hover a {
+.mainDrop > ul > li:hover a {
   color: white;
 }
-.mainDrop ul li a {
+.mainDrop > ul > li:nth-child(1) > ul {
+  background: white;
+  list-style-type: none;
+  display: none;
+}
+.mainDrop > ul > li:nth-child(1) > ul li {
+  width: 100%;
+}
+.mainDrop > ul > li:nth-child(1) > ul li a {
+  color: grey;
+}
+.mainDrop > ul > li:nth-child(1) > ul li a span {
+  float: left;
+  margin-right: 10px;
+}
+.mainDrop > ul > li:nth-child(1) > ul li a:hover {
+  border-bottom: none !important;
+  color: #53B778;
+}
+.mainDrop > ul > li a {
   text-decoration: none;
   font-size: 17px;
   color: #8D8D8E;
